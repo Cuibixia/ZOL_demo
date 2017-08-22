@@ -1,0 +1,2130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/default.css"/>
+<link rel="stylesheet" href="css/1F.css">
+<link rel="stylesheet" href="css/text.css">
+
+<title>无标题文档</title>
+</head>
+
+<body onload="login1()">
+	<div class="zc-topbar">
+	 <div class="wrapper clearfix">
+		<div class="zc-login-info">
+			<span class="zc-back-home">
+				<a href="#">商城首页</a>
+			</span>
+			<span class="zc-login">
+				"Hi~欢迎来到ZOL商城，请"
+				<a href="login.html">登录</a>
+			</span>	
+			<span class="zc-register">
+				<a href="#">免费注册</a>
+			</span>
+		</div>
+	<ul class="zc-quick-menu">
+		<li><a href="#">我的订单</a></li>
+		<li class="zc-my-center" onmouseover="showUI(this)" onmouseout="hideUI(this)">
+			<a href="#" class="zc-hd">买家中心
+				<i class="ico"><img src="images/topbar_ico.png"/></li>
+			</a>
+		    <div class="zc-my-center-bd" id="zc-my-center-bd" style="display:none ;">
+		    	<a href="#" style="display: none;">"我的优惠券&nbsp;&nbsp;"
+		    		<em>8</em>
+		    	</a>
+		    	<a href="#">关注的店铺&nbsp;&nbsp;
+		    		<em id="focusShopNum" style="color: #f33;">30</em>
+		    	</a>
+		    	<a href="#">关注的商品&nbsp;&nbsp;
+		    		<em id="focusGoodNum" style="color: #f33;">47</em>
+		    	</a>
+		    </div>
+		</li>
+		<li><a href="#" id="shop-cart-num">购物车0件</a>
+		</li>
+		<li><a href="#">帮助中心</a>
+		</li>
+		<li class="zc-mobile" onmouseover="showUI(this)" onmouseout="hideUI(this)">
+			<a href="javascript:;" class="zc-hd zc-mobile-hd">手机商城
+				<i class="ico"><img src="images/topbar_ico.png"/></i>
+			</a>
+			<div class="zc-mobile-bd" id="zc-mobile-bd">
+				<img src="images/shop_wechat.png" width="130" height="130">
+			</div>
+		</li>
+		<li><a href="#">中关村在线</a></li>
+		<li><a href="#">商家入驻</a></li>
+		<li class="customer">               
+		 <a href="javascript:;" onmouseover="showUI(this);" onmouseout="hideUI(this);" class="zc-hd">联系客服
+		 	<i class="ico"><img src="images/topbar_ico.png"/></i></a>                
+		 	<div class="zc-service-tel">400-678-0068</div>            
+		</li>
+		</ul>
+	
+	 </div>
+	</div>
+<!--标题图片-->
+<div class="header-pic">
+<a href="#" target="_blank" 
+	style="display:block;
+	height:90px;
+	margin-top:0px; 
+	background: url(images/tansuowujin.jpg) no-repeat 50% 0;"></a>
+</div>
+
+<!--ZOL浮动搜索条-->
+<div class="big-header">
+<div class="fixe-header clearfix">
+	<div class="logo1">
+		<h1><a title="ZOL商城" href="#" class="mall-logo1" ><img src="images/logo_180x50.png" /></a></h1>
+<!--全国定位-->
+<div class="logo-right-box1">
+	<div href="#" class="city-location1" >
+		<span href="javascript" class="city-name1" >全国
+			<em class="icon"></em>
+		</span>
+		<ul class="city-list1">
+			<li><a href="#">北京</a></li>
+			<li><a href="#">成都</a></li>
+			<li><a href="#">青岛</a></li>
+			<li><a href="#">沈阳</a></li>
+			<li><a href="#">西安</a></li>
+			<li><a href="#" class="quanguo1" style="color: #FFFFFF;">全国</a></li>
+		</ul>
+	</div>
+	</div>
+</div>
+<!--搜索框-->
+<form>
+<div class="search-list1">
+	<div class="search1">
+		<input name="word" type="text" class="text1"  value="">
+		<input type="submit" value="搜 索" class="s-btn1" >
+	</div>
+</form>	
+<!--登录注册样式-->
+<div class="bigbox">
+	<div class="login-register">
+		<a href="login.html" class="login-1">&nbsp;登录</a>	 
+		<a href="#" class="register-1">&nbsp;注册</a>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--搜索栏-->
+<div class="header clearfix">
+	<div class="logo">
+		<h1><a title="ZOL商城" href="#" class="mall-logo" ><img src="images/logo_180x50.png" /></a></h1>
+<!--全国定位-->
+<div class="logo-right-box">
+	<div href="#" class="city-location" >
+		<span href="javascript" class="city-name" >全国
+			<em class="icon"></em>
+		</span>
+		<ul class="city-list">
+			<li><a href="#">北京</a></li>
+			<li><a href="#">成都</a></li>
+			<li><a href="#">青岛</a></li>
+			<li><a href="#">沈阳</a></li>
+			<li><a href="#">西安</a></li>
+			<li><a href="#" class="quanguo" style="color: #FFFFFF;">全国</a></li>
+		</ul>
+	</div>
+	<p class="tongcheng"></p>
+	</div>
+</div>
+<!--搜索框-->
+<form>
+<div class="search-list">
+	<div class="search">
+		<input name="keyword" type="text" class="text"  value="">
+		<input type="submit" value="搜 索" class="s-btn" >
+	</div>
+</form>	
+<!--热搜榜-->
+<div class="resou">
+	<a href="#" target="_blank" title="iPhne 7">iPhone 7</a>
+	<a href="#" target="_blank" title="乐视">乐视</a>
+	<a href="#" target="_blank" title="华为">华为</a>
+	<a href="#" target="_blank" title="GTX1060">GTX1060</a>
+	<a href="#" target="_blank" title="热门游戏本">热门游戏本</a>
+	<a href="#" target="_blank" title="热销机械键盘">热销机械键盘</a>
+</div>
+<div class="focus">
+	<a href="#"><img src="images/fuwudaojia.jpg"></a>
+</div>
+</div>
+
+</div>	
+
+<div class="nav-box">
+	<div class="nav-container">
+		<h2 class="nav-title">商品分类</h2>
+		<div class="classify">
+			<ul class="titlemessage">
+                 <li class="fli">
+					<div class="type">手机通讯<span class="classify-icon icon1"></span></div>
+					<div class="contain clearfix">
+                          <a href="javascript:;">手机通讯</a>
+                          <a href="javascript:;">手机配件</a>
+                    </div>
+					<div class="menu-content">
+						<div class="left">
+							<dl class="service">
+								<dt><a href="javascript:;">服务保障</a></dt>
+								<dd class="clearfix">
+									<a href="#" target="_blank">
+                                        <i class="service-icon icon1"></i>行货保证</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon2"></i>发票保障</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon3"></i>24小时发货</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon4"></i>顺丰包邮</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon5"></i>无忧退换</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon6"></i>先行赔付</a>
+								</dd>
+							</dl>
+                            
+							<dl>
+                                <dt><a href="javascript:;">手机通讯</a></dt>
+								<dd><a href="#" target="_blank">手机</a>|</dd>
+                                
+                                <dt><a href="javascript:;">手机配件</a></dt>
+								<dd><a href="#" target="_blank">手机保护套</a>|
+                                    <a href="#" target="_blank">移动电源</a>|
+                                    <a href="#" target="_blank">手机电池</a>|
+                                   <a href="#" target="_blank">手机充电器</a>|
+                                   <a href="#" target="_blank">手机数据线</a>|
+                                   <a href="#" target="_blank">手机贴膜</a>|
+                                </dd>
+                         </dl>
+                           
+                        </div>
+                   </div>
+				</li>
+                
+                <li>
+					<div class="type">电脑整机<span class="classify-icon icon2"></span></div>
+					<div class="contain clearfix">
+                         <a href="javascript:;">电脑整机</a>
+                         <a href="javascript:;">笔记本配件</a>
+                    </div>
+					<div class="menu-content">
+						<div class="left">
+							<dl class="service">
+								<dt><a href="javascript:;">服务保障</a></dt>
+								<dd class="clearfix">
+									<a href="#" target="_blank">
+                                       <i class="service-icon icon1"></i>行货保证</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon2"></i>发票保障</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon3"></i>24小时发货</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon4"></i>顺丰包邮</a>
+									<a href="http://go.zol.com/topic/5062097.html" target="_blank">
+										<i class="service-icon icon5"></i>无忧退换</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon6"></i>先行赔付</a>
+								</dd>
+							</dl>
+							<dl>
+                                <dt><a href="javascript:;">电脑整机</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">笔记本电脑</a>                                    <a href="#" target="_blank">平板电脑</a>|
+                                    <a href="#" target="_blank">台式机</a>|
+                                    <a href="#" target="_blank">一体机</a>|
+                                    <a href="#" target="_blank">游戏笔记本</a>|
+                                                                    								                                </dd>
+                                <dt><a href="javascript:;">笔记本配件</a></dt>
+								<dd>
+                                   <a href="#" target="_blank">笔记本包</a>|
+                                   <a href="#" target="_blank">笔记本电池</a>|
+                                   <a href="#" target="_blank">笔记本底座</a>|
+                                   <a href="#" target="_blank">笔记本电源</a>|
+                                   <a href="#" target="_blank">笔记本配件</a>|
+                                                                    								                                </dd>
+                                <dt><a href="javascript:;">服务器</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">服务器</a>|
+                                </dd>
+                                <dt><a href="javascript:;">工作站</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">工作站</a>|
+                                                                    								                                </dd>
+                            </dl>
+                                                                                                    
+                                                                                                                			
+						</div>
+                    </div>
+				</li>
+                
+                <li>
+                
+                <div class="type">摄影摄像<span class="classify-icon icon3"></span></div>
+					<div class="contain clearfix">
+                         <a href="javascript:;">摄影摄像</a>
+                         <a href="javascript:;">数码配件</a>
+					</div>
+					<div class="menu-content">
+						<div class="left">
+							<dl class="service">
+								<dt><a href="javascript:;">服务保障</a></dt>
+								<dd class="clearfix">
+									<a href="#" target="_blank"> 
+										<i class="service-icon icon1"></i>行货保证</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon2"></i>发票保障</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon3"></i>24小时发货</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon4"></i>顺丰包邮</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon5"></i>无忧退换</a>
+									<a href="#" target="_blank">
+                                        <i class="service-icon icon6"></i>先行赔付</a>
+								</dd>
+							</dl>
+							<dl>
+                                <dt><a href="javascript:;">数码摄像</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">数码相机</a>|
+                                    <a href="#" target="_blank">数码摄像机</a>|
+                                                                    								                                </dd>
+                                <dt><a href="javascript:;">数码配件</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">相机镜头</a>|
+                                    <a href="#" target="_blank">滤镜</a>|
+                                    <a href="#" target="_blank">相机电池</a>|
+                                    <a href="#" target="_blank">闪光灯</a>|
+                                    <a href="#" target="_blank">相机遥控器</a>|
+                                    <a href="#" target="_blank">相机包</a>|
+                                    <a href="#" target="_blank">闪存卡</a>|
+                                                                    								                                </dd>
+                            </dl>
+                                                                                                   
+                       </div>
+                  </div>
+				</li>
+                
+                <li>
+                   <div class="type">DIY组装机<span class="classify-icon icon4"></span></div>
+					<div class="contain clearfix">
+                         <a href="javascript:;">DIY整机</a>
+                         <a href="javascript:;">DIY硬件</a>
+                    </div>
+					<div class="menu-content">
+						<div class="left">
+							<dl class="service">
+								<dt><a href="javascript:;">服务保障</a></dt>
+								<dd class="clearfix">
+									<a href="#" target="_blank"> 
+										<i class="service-icon icon1"></i>行货保证</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon2"></i>发票保障</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon3"></i>24小时发货</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon4"></i>顺丰包邮</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon5"></i>无忧退换</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon6"></i>先行赔付</a>
+								</dd>
+							</dl>
+							<dl>
+                                <dt><a href="javascript:;">DIY整机</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">DIY整机</a>|
+                                                                    								                                
+								</dd>
+                                <dt><a href="javascript:;">DIY硬件</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">显示器</a>|
+                                    <a href="#" target="_blank">显卡</a>|
+                                    <a href="#" target="_blank">主板</a>|
+                                    <a href="#" target="_blank">固态硬盘</a>|
+                                    <a href="#" target="_blank">内存</a>|
+                                    <a href="#" target="_blank">CPU</a>|
+                                    <a href="#" target="_blank">散热器</a>|
+                                    <a href="#" target="_blank">机箱</a>|
+                                    <a href="#" target="_blank">电源</a>|
+                                                                    								                               
+								</dd>
+                            </dl>
+                                                                                                                            
+						</div>
+                    </div>
+				</li>
+                
+                <li>
+					<div class="type">智能设备<span class="classify-icon icon5"></span></div>
+					<div class="contain clearfix">
+                         <a href="javascript:;">智能穿戴</a>
+                         <a href="javascript:;">智能家居</a></div>
+					<div class="menu-content">
+						<div class="left">
+							<dl class="service">
+								<dt><a href="javascript:;">服务保障</a></dt>
+								<dd class="clearfix">
+									<a href="#" target="_blank"> 
+										<i class="service-icon icon1"></i>行货保证</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon2"></i>发票保障</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon3"></i>24小时发货
+									</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon4"></i>顺丰包邮</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon5"></i>无忧退换
+									</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon6"></i>先行赔付</a>
+								</dd>
+							</dl>
+							<dl>
+                                <dt><a href="javascript:;">智能穿戴</a></dt>
+								<dd>
+                                    <a href="h#" target="_blank">智能手表</a>|
+                                    <a href="#" target="_blank">智能手环</a>|
+                                    <a href="#" target="_blank">VR眼镜</a>|
+                                                                    								                                
+								</dd>
+                                <dt><a href="javascript:;">智能家居</a></dt>
+								<dd>
+                                   <a href="#" target="_blank">智能摄像机</a>|
+                                   <a href="#" target="_blank">智能秤</a>|
+                                   <a href="#" target="_blank">智能灯</a>|
+                                   <a href="#" target="_blank">智能插座</a>|
+                                                                    								                                
+								</dd>
+                            </dl>
+                                                                                                                           
+						</div>
+                    </div>				
+                </li>
+                
+                <li>
+					<div class="type">外设存储<span class="classify-icon icon6"></span></div>
+                    <div class="contain clearfix">
+                         <a href="javascript:;">外设装备</a>
+                         <a href="javascript:;">储存设备</a>
+                         <a href="javascript:;">路由器</a>
+                    </div>
+					<div class="menu-content">
+						<div class="left">
+							<dl class="service">
+								<dt><a href="javascript:;">服务保障</a></dt>
+								<dd class="clearfix">
+									<a href="#" target="_blank"> 
+										<i class="service-icon icon1"></i>行货保证</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon2"></i>发票保障</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon3"></i>24小时发货
+									</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon4"></i>顺丰包邮</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon5"></i>无忧退换</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon6"></i>先行赔付</a>
+								</dd>
+							</dl>
+							<dl>
+                                <dt><a href="javascript:;">外设装备</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">鼠标</a>|
+                                    <a href="#" target="_blank">耳机</a>|
+                                    <a href="#" target="_blank">键盘</a>|
+                                    <a href="#" target="_blank">键鼠套装</a>|
+                                    <a href="#" target="_blank">鼠标垫</a>|
+                                    <a href="#" target="_blank">音箱</a>|
+                                                                    								                               
+								</dd>
+                                <dt><a href="javascript:;">储存设备</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">U盘</a>|
+                                    <a href="#" target="_blank">移动硬盘</a>|
+                                                                    								                               
+								</dd>
+                                <dt><a href="javascript:;">路由器</a></dt>
+								<dd>
+                                   <a href="#" target="_blank">路由器</a>|
+                                </dd>
+                           </dl>
+                                                                                                                           
+						</div>
+                   </div>
+				</li>
+
+                <li>
+                    <div class="type">生活家电<span class="classify-icon icon7"></span></div>
+					<div class="contain clearfix">
+                         <a href="javascript:;">厨房电器</a>
+                         <a href="javascript:;">个护电器</a>
+                         <a href="javascript:;">大家电</a>
+                    </div>
+					<div class="menu-content">
+						<div class="left">
+							<dl class="service">
+								<dt><a href="javascript:;">服务保障</a></dt>
+								<dd class="clearfix">
+									<a href="#" target="_blank"> 
+										<i class="service-icon icon1"></i>行货保证</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon2"></i>发票保障</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon3"></i>24小时发货
+									</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon4"></i>顺丰包邮</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon5"></i>无忧退换
+									</a>
+									<a href="#" target="_blank">
+										<i class="service-icon icon6"></i>先行赔付</a>
+								</dd>
+							</dl>
+							<dl>
+                                <dt><a href="javascript:;">厨房电器</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">电饭煲</a>|
+                                    <a href="#" target="_blank">酸奶机</a>|
+                                    <a href="#" target="_blank">蒸蛋器</a>|
+                                    <a href="#" target="_blank">咖啡机</a>|
+                                    <a href="#" target="_blank">豆浆机</a>|
+                                    <a href="#" target="_blank">烤箱</a>|
+                                    <a href="#" target="_blank">电火锅</a>|
+                                    <a href="#" target="_blank">微波炉</a>|
+                                    <a href="#" target="_blank">空气炸锅</a>|
+                                    <a href="#" target="_blank">多士炉</a>|
+                                    <a href="#" target="_blank">电压力锅</a>|
+                                    <a href="#" target="_blank">电磁炉</a>|
+                                    <a href="#" target="_blank">电饼铛</a>|
+                                    <a href="#" target="_blank">净水设备</a>|
+                                                                    								                                </dd>
+                                <dt><a href="javascript:;">个护电器</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">剃须刀</a>|
+                                    <a href="#" target="_blank">电吹风</a>|
+                                    <a href="#" target="_blank">电动牙刷</a>|
+                                    <a href="#" target="_blank">脱毛器</a>|
+                                                                    								                                </dd>
+                                <dt><a href="javascript:;">大家电</a></dt>
+								<dd>
+                                    <a href="#" target="_blank">电视</a>|
+                                </dd>
+                            </dl>
+                                                                                                                            
+						</div>
+                   </div>
+
+				</li>
+        </ul>
+	 </div>
+  </div>
+    <ul class="nav clearfix">
+              <li><a href="#" target="_blank">首页</a></li>
+               <li><a href="#" target="_blank">团购</a></li>
+              <li><a href="#" target="_blank">ZOL智选</a></li>
+              <li><a href="#" target="_blank">DIY攒机馆</a></li>
+                 
+	</ul>
+   <div class="nav-tips"><a href="#" target="_blank">oppo狂欢周 R9s Plus现货3459元秒！</a></div>  
+</div>
+
+<div class="bannerbox">
+<div class="banner">
+	<ul class="img">
+    	<li><a href="#"><img src="images/banner1.jpg"></a></li>
+        <li><a href="#"><img src="images/banner2.jpg"></a></li>
+        <li><a href="#"><img src="images/banner3.jpg"></a></li>
+    </ul>
+    
+    <ul class="num">    	
+    </ul>
+    
+    <div class="btn btn_l"><img src="images/btnl.png"></div>
+    <div class="btn btn_r"><img src="images/btnr.png"></div>
+</div>
+
+<div class="list">
+     <ul class="aj">
+             <!--<li>
+				<h4 >联想小新Air 13 Pro</h4>
+				<p class="price">限时4899元！</p>
+				<div class="scroll"><img src="images/list1.jpg"></div>
+			 </li>
+              
+             <li>
+				<h4 >魅蓝Note 5</h4>
+				<p class="price">团购价969元</p>
+                <div class="scroll"><img src="images/list2.jpg"></div>
+             </li>
+              
+             <li>
+				<h4 >惠普暗影精灵2飞翔版</h4>
+				<p class="price">低价再临4999元！</p>
+				<div class="scroll"><img src="images/list3.jpg"></div>
+			 </li>
+             <li>
+				<h4 >乐Max2  全网通 骁龙820</h4>
+				<p class="price">抄底价1449元</p>
+				<div class="scroll"><img src="images/list4.jpg"></div>
+            </li>-->
+    </ul>
+  </div>
+</div>
+
+ <div class="rightmes">
+     <div class="rigpig">
+		<a href="#" target="_blank"><img src="images/right1.jpg" width="238" height="218"></a>
+	</div>
+    <div class="rigpig">
+			<a href="#"><img src="images/right2.jpg" width="238" height="218"></a>
+	</div> 
+</div>  
+
+<div class="teampurchase">
+		<div class="ptitle">
+			<h2 class="title">全国团购</h2>
+             <p class="more">
+                <a href="#">魅族 &nbsp | </a>           
+                <a href="#">三星 &nbsp | </a>                
+                <a href="#">苹果 &nbsp | </a>               
+                <a href="#">华为 &nbsp | </a>                
+                <a href="#">更多团购<span>&nbsp;&gt;</span></a>
+			</p>
+		</div>
+        
+	 <ul class="buylist">
+         <li>
+            <a href="#"><img src="images/buylist1.jpg" width="298" height="180"></a>
+            <div class="counttime">
+              <span>剩余时间：</span>
+              <b class="b1">&nbsp;</b><span>时</span>
+              <b class="b2">&nbsp;</b><span>分</span>
+              <b class="b3">&nbsp;</b><span>秒</span>
+            </div>
+         </li>
+         
+         <li>
+            <a href="#"><img src="images/buylist2.jpg" width="298" height="180"></a>
+            <div class="counttime">
+              <span>剩余时间：</span>
+              <b class="b1">&nbsp;</b><span>时</span>
+              <b class="b2">&nbsp;</b><span>分</span>
+              <b class="b3">&nbsp;</b><span>秒</span>
+            </div>
+         </li>
+         
+         <li>
+            <a href="#"><img src="images/buylist3.jpg" width="298" height="180"></a>
+            <div class="counttime">
+              <span>剩余时间：</span>
+              <b class="b1">&nbsp;</b><span>时</span>
+              <b class="b2">&nbsp;</b><span>分</span>
+              <b class="b3">&nbsp;</b><span>秒</span>
+            </div>
+         </li>
+         
+         <li>
+            <a href="#"><img src="images/buylist4.jpg" width="298" height="180"></a>
+            <div class="counttime">
+              <span>剩余时间：</span>
+              <b class="b1">&nbsp;</b><span>时</span>
+              <b class="b2">&nbsp;</b><span>分</span>
+              <b class="b3">&nbsp;</b><span>秒</span>
+            </div>
+         </li>                      		
+    </ul>
+</div>
+
+<div class="ad">
+<img src="images/banner.gif" width="1200" height="90" />
+</div>
+
+<div class="all"><!--包括全部内容的div-->
+		<!--手机广告条-->
+		<div class="ad-div">
+			<a href="http://go.zol.com/topic/6208383.html?spm=1260.44737" target="_blank">
+				<img width="1200" height="90" src="images/a1.jpg">
+			</a>
+		</div>
+		
+		
+		<!-- 1楼 手机通讯 -->
+		<div class="computer-section firstfloor">
+			<div class="module-title">
+			<h2 class="title">1F 手机通讯</h2>
+		    </div>
+			<div class="computer-region">
+				<div class="clearfix">
+					<div class="computer-left">
+						
+					<a href="http://go.zol.com/topic/6206324.html?spm=1175.44449" target="_blank" class="pic">
+					<img src="images/a2.jpg" height="420" width="360">
+                    </a>
+                    
+					</div>
+					<div class="computer-right">
+						<ul class="waretype-tab"  >
+							 <li class="fli" id="t1">热门</li>
+                             <li class="" id="t2">三星</li>
+                             <li class="" id="t3">华为</li>
+						</ul>
+
+                    <div class="tab_con">
+                    <div class="hide fdiv" id="f1">
+                    	
+                    	<div class="ban1">
+<div class="banner">
+	<ul class="img">
+    	<li><a href="#"><img src="images/a3.jpg"></a></li>
+        <li><a href="#"><img src="images/a4.jpg"></a></li>
+        <li><a href="#"><img src="images/a5.jpg"></a></li>   
+    </ul>
+    
+    <ul class="num">    	
+    </ul>
+    
+    <div class="btn btn_l"><img src="images/btnl.png"></div>
+    <div class="btn btn_r"><img src="images/btnr.png"></div>
+
+</div>
+
+</div>
+                  	<div class="hot-region-ware">
+                  		<ul class="hot-region-ware">
+                  			<li>
+                  					<a href="http://www.zol.com/list/ser21203.html?spm=1177.43404" target="_blank">
+                  						<img src="images/a6.jpg" height="199" width="208" >
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://www.zol.com/list/ser21203.html?spm=1177.43404" target="_blank">
+                  						<img src="images/a6.jpg" height="199" width="208">
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://www.zol.com/list/ser21203.html?spm=1177.43404" target="_blank">
+                  						<img src="images/a6.jpg" height="199" width="208">
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://www.zol.com/list/ser21203.html?spm=1177.43404" target="_blank">
+                  						<img src="images/a6.jpg" height="199" width="208">
+                  					</a>
+                  			</li>
+                  		</ul>	
+                  	</div>	
+                    
+                    
+                    </div >
+                    
+                    <div class="hide" id="f2">
+                    	<!--bbbb-->
+                    	<ul class="product-series clearfix">
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a7.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    					【顺丰包邮 送自拍杆 手指环】三星 GALAXY C9 Pro（C9000/全网通）
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥2859.00
+                    			</span>
+                    			<span class="prime-price">
+                    				￥3177.00
+                    			</span>
+                    		</li>
+                    		
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    					【顺丰包邮 送自拍杆 手指环】三星 GALAXY C9 Pro（C9000/全网通）
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥2859.00
+                    			</span>
+                    			<span class="prime-price">
+                    				￥3177.00
+                    			</span>
+                    		</li>
+                    		
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    					【顺丰包邮 送自拍杆 手指环】三星 GALAXY C9 Pro（C9000/全网通）
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥2859.00
+                    			</span>
+                    			<span class="prime-price">
+                    				￥3177.00
+                    			</span>
+                    		</li>
+                    		
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    					【顺丰包邮 送自拍杆 手指环】三星 GALAXY C9 Pro（C9000/全网通）
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥2859.00
+                    			</span>
+                    			<span class="prime-price">
+                    				￥3177.00
+                    			</span>
+                    		</li>
+                    		
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    					【顺丰包邮 送自拍杆 手指环】三星 GALAXY C9 Pro（C9000/全网通）
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥2859.00
+                    			</span>
+                    			<span class="prime-price">
+                    				￥3177.00
+                    			</span>
+                    		</li>
+                    		
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    					【顺丰包邮 送自拍杆 手指环】三星 GALAXY C9 Pro（C9000/全网通）
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥2859.00
+                    			</span>
+                    			<span class="prime-price">
+                    				￥3177.00
+                    			</span>
+                    		</li>
+                    		
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    					【顺丰包邮 送自拍杆 手指环】三星 GALAXY C9 Pro（C9000/全网通）
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥2859.00
+                    			</span>
+                    			<span class="prime-price">
+                    				￥3177.00
+                    			</span>
+                    		</li>
+                    		
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    					【顺丰包邮 送自拍杆 手指环】三星 GALAXY C9 Pro（C9000/全网通）
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥2859.00
+                    			</span>
+                    			<span class="prime-price">
+                    				￥3177.00
+                    			</span>
+                    		</li>
+                    		<div class="clear"></div>
+                    	</ul>
+                   
+                    </div>
+                    <div class="hide" id="f3">
+                    	<!--cccc-->
+                    	<ul class="product-series clearfix">
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a8.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/huawei/27586155.html" target="_blank">
+                    					【爱科入网价2999元+充值500元话费】华为 P9 Plus 全网通 4GB+64GB
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3499.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a8.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/huawei/27586155.html" target="_blank">
+                    					【爱科入网价2999元+充值500元话费】华为 P9 Plus 全网通 4GB+64GB
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3499.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a8.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/huawei/27586155.html" target="_blank">
+                    					【爱科入网价2999元+充值500元话费】华为 P9 Plus 全网通 4GB+64GB
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3499.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a8.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/huawei/27586155.html" target="_blank">
+                    					【爱科入网价2999元+充值500元话费】华为 P9 Plus 全网通 4GB+64GB
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3499.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a8.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/huawei/27586155.html" target="_blank">
+                    					【爱科入网价2999元+充值500元话费】华为 P9 Plus 全网通 4GB+64GB
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3499.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a8.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/huawei/27586155.html" target="_blank">
+                    					【爱科入网价2999元+充值500元话费】华为 P9 Plus 全网通 4GB+64GB
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3499.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a8.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/huawei/27586155.html" target="_blank">
+                    					【爱科入网价2999元+充值500元话费】华为 P9 Plus 全网通 4GB+64GB
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3499.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/cell_phone/samsung/28863205.html" target="_blank">
+                    				<img src="images/a8.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/cell_phone/huawei/27586155.html" target="_blank">
+                    					【爱科入网价2999元+充值500元话费】华为 P9 Plus 全网通 4GB+64GB
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3499.00
+                    			</span>
+                    			
+                    		</li>
+                    		
+                    	</ul>
+                    
+                    </div>
+                    </div>
+                    
+                    		
+					</div>					
+				</div>				
+			</div>			
+		</div>
+		
+		            <div class="clear"></div>
+                    <div>
+                    	<ul class="brands-con clearfix">
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a9.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a10.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a11.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a12.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a13.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a14.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a15.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a16.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a17.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/cell_phone/list/c34_s57_m613.html" target="_blank">
+                    				<img src="images/a18.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    	</ul>
+                    </div>
+               				
+		
+		<!-- 2楼 电脑数码 -->
+		<div class="computer-section">
+			<div class="module-title">
+			<h2 class="title">2F 电脑数码</h2>
+		    </div>
+			<div class="computer-region">
+				<div class="clearfix">
+					<div class="computer-left">
+						
+					<a href="http://go.zol.com/topic/6206324.html?spm=1175.44449" target="_blank" class="pic">
+					<img src="images/2F/b1.jpg" height="420" width="360">
+                    </a>
+                    
+					</div>
+					
+ <div class="computer-right">
+						<ul class="waretype-tab"  >
+							  <li class="fli" id="t21">热门</li>
+                             <li class="" id="t22">笔记本</li>
+                             <li class="" id="t23">平板电脑</li>
+						</ul>
+
+                    <div class="tab_con">
+                    <div class="hide fdiv" id="f21" >
+                    	
+                    	<div class="ban2">
+<div class="banner">
+	<ul class="img">
+    	<li><a href="#"><img src="images/2F/b2.jpg"></a></li>
+        <li><a href="#"><img src="images/2F/b3.jpg"></a></li>
+        <li><a href="#"><img src="images/2F/b4.jpg"></a></li>   
+    </ul>
+    
+    <ul class="num">    	
+    </ul>
+    
+    <div class="btn btn_l"><img src="images/btnl.png"></div>
+    <div class="btn btn_r"><img src="images/btnr.png"></div>
+
+</div>
+
+</div>
+                    	<div class="hot-region-ware">
+                  		<ul class="hot-region-ware">
+                  			<li>
+                  					<a href="http://www.zol.com/list/ser21203.html?spm=1177.43404" target="_blank">
+                  						<img src="images/2F/b5.jpg" height="199" width="208" >
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://www.zol.com/list/ser21203.html?spm=1177.43404" target="_blank">
+                  						<img src="images/2F/b5.jpg" height="199" width="208">
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://www.zol.com/list/ser21203.html?spm=1177.43404" target="_blank">
+                  						<img src="images/2F/b5.jpg" height="199" width="208">
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://www.zol.com/list/ser21203.html?spm=1177.43404" target="_blank">
+                  						<img src="images/2F/b5.jpg" height="199" width="208">
+                  					</a>
+                  			</li>
+                  		</ul>	
+                  		</div>
+                  	</div>
+                  	<div class="hide" id="f22">
+                  		<ul class="product-series clearfix">
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    				<img src="images/2F/b6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4999.00
+                    			</span>
+                    			
+                    			<span class="icon">
+                    				满减
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    				<img src="images/2F/b6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4999.00
+                    			</span>
+                    			
+                    			<span class="icon">
+                    				满减
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    				<img src="images/2F/b6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4999.00
+                    			</span>
+                    			
+                    			<span class="icon">
+                    				满减
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    				<img src="images/2F/b6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4999.00
+                    			</span>
+                    			
+                    			<span class="icon">
+                    				满减
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    				<img src="images/2F/b6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4999.00
+                    			</span>
+                    			
+                    			<span class="icon">
+                    				满减
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    				<img src="images/2F/b6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4999.00
+                    			</span>
+                    			
+                    			<span class="icon">
+                    				满减
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    				<img src="images/2F/b6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4999.00
+                    			</span>
+                    			
+                    			<span class="icon">
+                    				满减
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    				<img src="images/2F/b6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					【顺丰包邮】联想 小新700电竞版15.6英寸游戏本(i5-6300HQ 8G 500G+128G SSD GTX950M 4G IPS Office2016)黑
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4999.00
+                    			</span>
+                    			
+                    			<span class="icon">
+                    				满减
+                    			</span>
+                    			
+                    		</li>
+                  		
+                  	</div>
+                  	<div class="hide" id="f23">
+                  		<ul class="product-series clearfix">
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    				<img src="images/2F/b7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    					【全国联保 赠高清膜】苹果 iPad Air 2（128GB/WiFi版）金色/白色
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3488.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    				<img src="images/2F/b7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    					【全国联保 赠高清膜】苹果 iPad Air 2（128GB/WiFi版）金色/白色
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3488.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    				<img src="images/2F/b7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    					【全国联保 赠高清膜】苹果 iPad Air 2（128GB/WiFi版）金色/白色
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3488.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    				<img src="images/2F/b7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    					【全国联保 赠高清膜】苹果 iPad Air 2（128GB/WiFi版）金色/白色
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3488.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    				<img src="images/2F/b7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    					【全国联保 赠高清膜】苹果 iPad Air 2（128GB/WiFi版）金色/白色
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3488.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    				<img src="images/2F/b7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    					【全国联保 赠高清膜】苹果 iPad Air 2（128GB/WiFi版）金色/白色
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3488.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    				<img src="images/2F/b7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    					【全国联保 赠高清膜】苹果 iPad Air 2（128GB/WiFi版）金色/白色
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3488.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    				<img src="images/2F/b7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/tablepc/apple/28663054.html" target="_blank">
+                    					【全国联保 赠高清膜】苹果 iPad Air 2（128GB/WiFi版）金色/白色
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥3488.00
+                    			</span>
+                    			
+                    		</li>
+                    		
+                    		
+                  		</ul>
+                  	</div>
+                  	
+                </div>
+            </div>
+                    <div class="clear"></div>
+                    <div >
+                    	<ul class="brands-con clearfix">
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b8.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b9.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b10.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b11.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b12.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b13.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b14.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b15.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b16.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&str=o3&keyword=Acer" target="_blank">
+                    				<img src="images/2F/b17.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		
+                    	</ul>
+                    </div>
+                    
+		<!-- 3楼 数码摄影 -->
+		<div class="computer-section">
+			<div class="module-title">
+			<h2 class="title">3F 数码摄影</h2>
+		    </div>
+			<div class="computer-region">
+				<div class="clearfix">
+					<div class="computer-left">
+						
+					<a href="http://go.zol.com/topic/6206324.html?spm=1175.44449" target="_blank" class="pic">
+					<img src="images/3F/c1.jpg" height="420" width="360">
+                    </a>
+                    
+					</div>
+
+ <div class="computer-right">
+						<ul class="waretype-tab"  >
+							  <li class="fli" id="t31">热门</li>
+                             <li class="" id="t32">数码相机</li>
+                             <li class="" id="t33">数码摄像机</li>
+						</ul>
+
+                    <div class="tab_con">
+                    <div class="hide fdiv" id="f31" >
+                    	
+                    	<div class="ban3">
+<div class="banner">
+	<ul class="img">
+    	<li><a href="#"><img src="images/3F/c2.jpg"></a></li>
+        <li><a href="#"><img src="images/3F/c3.jpg"></a></li>
+        <li><a href="#"><img src="images/3F/c4.jpg"></a></li>   
+    </ul>
+    
+    <ul class="num">    	
+    </ul>
+    
+    <div class="btn btn_l"><img src="images/btnl.png"></div>
+    <div class="btn btn_r"><img src="images/btnr.png"></div>
+
+</div>
+
+</div>
+ 
+                    	<div class="hot-region-ware">
+                  		<ul class="hot-region-ware">
+                  			<li>
+                  					<a href="http://tuan.zol.com/26395.html?spm=1183.43407" target="_blank">
+                  						<img src="images/3F/c5.jpg" height="199" width="208" >
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://tuan.zol.com/26395.html?spm=1183.43407" target="_blank">
+                  						<img src="images/3F/c5.jpg" height="199" width="208" >
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://tuan.zol.com/26395.html?spm=1183.43407" target="_blank">
+                  						<img src="images/3F/c5.jpg" height="199" width="208" >
+                  					</a>
+                  			</li>
+                  			<li>
+                  					<a href="http://tuan.zol.com/26395.html?spm=1183.43407" target="_blank">
+                  						<img src="images/3F/c5.jpg" height="199" width="208" >
+                  					</a>
+                  			</li>
+                  		</ul>
+                  		</div>
+		            </div>
+		            <div class="hide" id="f32">
+		            	<ul class="product-series clearfix">
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camera/sony/26872630.html" target="_blank">
+                    				<img src="images/3F/c6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					索尼（SONY）ILCE-6300L 16-50mm镜头）索尼旗舰APS-C全新微单，对焦速度快至约0.05秒，拥有425个相位检测对焦点，4k高清视频
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥8000.00
+                    			</span>
+      
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camera/sony/26872630.html" target="_blank">
+                    				<img src="images/3F/c6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					索尼（SONY）ILCE-6300L 16-50mm镜头）索尼旗舰APS-C全新微单，对焦速度快至约0.05秒，拥有425个相位检测对焦点，4k高清视频
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥8000.00
+                    			</span>
+      
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camera/sony/26872630.html" target="_blank">
+                    				<img src="images/3F/c6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					索尼（SONY）ILCE-6300L 16-50mm镜头）索尼旗舰APS-C全新微单，对焦速度快至约0.05秒，拥有425个相位检测对焦点，4k高清视频
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥8000.00
+                    			</span>
+      
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camera/sony/26872630.html" target="_blank">
+                    				<img src="images/3F/c6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					索尼（SONY）ILCE-6300L 16-50mm镜头）索尼旗舰APS-C全新微单，对焦速度快至约0.05秒，拥有425个相位检测对焦点，4k高清视频
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥8000.00
+                    			</span>
+      
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camera/sony/26872630.html" target="_blank">
+                    				<img src="images/3F/c6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					索尼（SONY）ILCE-6300L 16-50mm镜头）索尼旗舰APS-C全新微单，对焦速度快至约0.05秒，拥有425个相位检测对焦点，4k高清视频
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥8000.00
+                    			</span>
+      
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camera/sony/26872630.html" target="_blank">
+                    				<img src="images/3F/c6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					索尼（SONY）ILCE-6300L 16-50mm镜头）索尼旗舰APS-C全新微单，对焦速度快至约0.05秒，拥有425个相位检测对焦点，4k高清视频
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥8000.00
+                    			</span>
+      
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camera/sony/26872630.html" target="_blank">
+                    				<img src="images/3F/c6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					索尼（SONY）ILCE-6300L 16-50mm镜头）索尼旗舰APS-C全新微单，对焦速度快至约0.05秒，拥有425个相位检测对焦点，4k高清视频
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥8000.00
+                    			</span>
+      
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camera/sony/26872630.html" target="_blank">
+                    				<img src="images/3F/c6.jpg" width="120" height="120" />
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/notebook/lenovo/28263533.html" target="_blank">
+                    					索尼（SONY）ILCE-6300L 16-50mm镜头）索尼旗舰APS-C全新微单，对焦速度快至约0.05秒，拥有425个相位检测对焦点，4k高清视频
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥8000.00
+                    			</span>
+      
+                    		</li>
+                    		
+                    	</ul>
+		            </div>
+		            <div class="hide" id="f33">
+		            	<ul class="product-series clearfix">
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    				<img src="images/3F/c7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    					Sony 索尼 HDR-PJ670/索尼PJ670E新款家用高清摄像机、内置投影、*更完善的售后服务、被信任是一种快乐！
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4630.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    				<img src="images/3F/c7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    					Sony 索尼 HDR-PJ670/索尼PJ670E新款家用高清摄像机、内置投影、*更完善的售后服务、被信任是一种快乐！
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4630.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    				<img src="images/3F/c7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    					Sony 索尼 HDR-PJ670/索尼PJ670E新款家用高清摄像机、内置投影、*更完善的售后服务、被信任是一种快乐！
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4630.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    				<img src="images/3F/c7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    					Sony 索尼 HDR-PJ670/索尼PJ670E新款家用高清摄像机、内置投影、*更完善的售后服务、被信任是一种快乐！
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4630.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    				<img src="images/3F/c7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    					Sony 索尼 HDR-PJ670/索尼PJ670E新款家用高清摄像机、内置投影、*更完善的售后服务、被信任是一种快乐！
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4630.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    				<img src="images/3F/c7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    					Sony 索尼 HDR-PJ670/索尼PJ670E新款家用高清摄像机、内置投影、*更完善的售后服务、被信任是一种快乐！
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4630.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    				<img src="images/3F/c7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    					Sony 索尼 HDR-PJ670/索尼PJ670E新款家用高清摄像机、内置投影、*更完善的售后服务、被信任是一种快乐！
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4630.00
+                    			</span>
+                    			
+                    		</li>
+                    		<li>
+                    			<a class="pic" href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    				<img src="images/3F/c7.jpg" width="120" height="120"/>
+                    			</a>
+                    			<h5 class="name">
+                    				<a href="http://www.zol.com/detail/digital_camcorder/sony/24468426.html" target="_blank">
+                    					Sony 索尼 HDR-PJ670/索尼PJ670E新款家用高清摄像机、内置投影、*更完善的售后服务、被信任是一种快乐！
+                    				</a>
+                    			</h5>
+ 
+                    			<span class="price">
+                    				￥4630.00
+                    			</span>
+                    			
+                    		</li>
+                    		
+                    	</ul>
+		            </div>
+		            </div>
+		         </div>   
+		            <div class="clear"></div>
+                    <div >
+                    	<ul class="brands-con clearfix">
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c8.jpg" width="118 "height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c9.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c10.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c11.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c12.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c13.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c14.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c15.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c16.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    		<li>
+                    			<a href="http://www.zol.com/index.php?c=List&keyword=%BC%D1%C4%DC&spm=921" target="_blank">
+                    				<img src="images/3F/c17.jpg" width="118" height="60">
+                    			</a>
+                    		</li>
+                    	</ul>
+		            </div>
+       </div><!--包括全部内容的div-->
+
+<div class="hotsale">
+	<div class="remai">
+		<h2 class="title">热卖商品</h2>
+		<i class="change">换一批</i>
+	</div>
+	<ul class="hotsale-list">
+<!--热卖商品列表-->
+		<li style="display: block;">
+			<span class="arrival-time">青岛3小时送达</span>
+			<a href="#" target="_blank" class="picture">
+			<img src="images/pingguo.jpg" width="221" height="220">
+            </a>
+            <h4 class="phone-name">
+            	<a href="#" target="_blank">【顺丰包邮 送贴膜】苹果 12.9英寸iPad Pro（32GB/WiFi版）</a>
+            </h4>
+            <div class="price-tag">
+            	<span class="phone-price">￥5439</span>
+            <div class="ico-box">
+            
+            </div>
+            </div>
+		</li>
+		<li style="display: block;">
+			<a href="#" target="_blank" class="picture">
+			<img src="images/huashuo.jpg" width="221" height="220">
+            </a>
+            <h4 class="phone-name">
+            	<a href="#" target="_blank">【顺丰包邮】15.6英寸游戏影音本 华硕 FX50JK4200 惊喜实惠价！华硕FX陨石堡垒 (劲爆酷睿i5-4200H 4GB  500GB GTX850M-2G独显</a>
+             </h4>
+            <div class="price-tag">
+            	<span class="phone-price">￥4165</span>
+            <div class="ico-box">
+            
+            </div>
+            </div>
+		</li>
+		<li style="display: block;">
+			<a href="#" target="_blank" class="picture">
+			<img src="images/suoni.jpg" width="221" height="220">
+            </a>
+            <h4 class="phone-name">
+            	<a href="#" target="_blank">Sony索尼 CX900E快速高清摄像机/索尼CX900E*更完善的售后服务、被信任是一种快乐！</a>
+             </h4>
+            <div class="price-tag">
+            	<span class="phone-price">￥8639</span>
+            <div class="ico-box">
+            
+            </div>
+            </div>
+		</li>
+		<li style="display: block;">
+			<a href="#" target="_blank" class="picture">
+			<img src="images/huipu.jpg" width="221" height="220">
+            </a>
+            <h4 class="phone-name">
+            	<a href="#" target="_blank">惠普 OMEN 15-ax016TX  暗影精灵2代 15.6寸影音娱乐游戏本 i5-6300H 4G DDR4代 128G固态+1TB GTX960M-2G独显</a>
+             </h4>           
+           <div class="price-tag">
+            	<span class="phone-price">￥5447</span>
+            <div class="ico-box">
+            
+            </div>
+            </div>
+		</li>
+		<li style="display: block;">
+			<span class="arrival-time">北京3小时速达</span>
+			<a href="#" target="_blank" class="picture">
+			<img src="images/meizu.jpg" width="221" height="220">
+            </a>
+            <h4 class="phone-name">
+            	<a href="#" target="_blank">魅族 魅蓝3S 全网通  3GB+32GB 双卡双待</a>
+             </h4>
+            <div class="price-tag">
+            	<span class="phone-price">￥699</span>
+            <div class="ico-box">
+            	
+            </div>
+            </div>
+		</li>
+	</ul>	
+</div>
+
+
+<div class="footer"><hr style="width:1349px;margin-left: -75px;border:none;background:#ededed;height: 2px;"/>	
+<div class="wrapper">
+		<ul class="Info">
+            <li class="news1">
+				<a href="#">
+					<p class="top">先行赔付</p>
+					<p class="below">权益受损先行赔付</p>
+				</a>
+			</li>
+            <li class="news2">
+				<a href="#">
+					<p class="top">正品保障</p>
+					<p class="below">正规渠道正品质量</p>
+				</a>
+			</li>
+            
+            <li class="news3">
+				<a href="#">
+					<p class="top">无忧退换</p>
+					<p class="below">均支持7天无理由</p>
+				</a>
+			</li>
+            
+            <li class="news4">
+				<a href="#">
+					<p class="top">发票保障</p>
+					<p class="below">所售商品均有发票</p>
+				</a>
+			</li>
+            
+            <li class="news5">
+				<a href="#">
+					<p class="top">顺丰包邮</p>
+					<p class="below">部分商品顺丰包邮</p>
+				</a>
+			</li>
+            
+            <li class="news6">
+				<a href="#">
+					<p class="top">急速发货</p>
+					<p class="below">48小时内急速发货</p>
+				</a>
+			</li>
+     </ul>
+     
+   <div id="wbottom">
+        <ul class="one">
+           <li class="special"><a>购物指南</a></li>
+           <li><a>账号注册</a></li>
+           <li><a>购物流程</a></li>
+           <li><a>付款方式</a></li>
+        </ul>
+        
+        <ul class="one">
+           <li class="special"><a>售后服务</a></li>
+           <li><a>先行先赔</a></li>
+           <li><a>退款退货流程</a></li>
+           <li><a>投诉举报</a></li>
+        </ul>
+        <ul class="one">
+           <li class="special"><a>商城保障</a></li>
+           <li><a>行货保障</a></li>
+           <li><a>如实描述</a></li>
+           <li><a>物流配送</a></li>
+           <li><a>48小时发货</a></li>
+           <li><a>发票保障</a></li>
+        </ul>
+        
+        <ul class="one">
+           <li class="special"><a>商家服务</a></li>
+           <li><a>商家中心</a></li>
+           <li><a>商城规则</a></li>
+           <li><a>商家帮助</a></li>
+        </ul>
+         <ul class="two">
+         	<li class="special first phone"><a>400-678-0068</a></li>
+         	<li><a>工作日 9:00 - 18:00</a></li>
+         	<li class="special first follow"><a>关注新浪微博</a></li>
+         </ul>
+       <ul class="three">
+         	<li class="special first cooperation"><a>商家合作</a></li>
+         	<li><a>错过天猫？别再错过我们！</a></li>
+         	<li><a>ZOL商城开启全新旅程！</a></li>
+         	<li><a href="#" class="btn">关于入驻  &gt;</a></li>
+       </ul>
+    </div> 
+    
+</div>
+</div>
+
+<div class="all1"><!--包括全部内容的div-->
+			<div class="footer-nav-bar">
+				<div class="partners" style="height: auto;">
+					
+				
+					<span class="label">合作伙伴：</span>
+					<p>
+					<a href="http://www.vmall.com" target="_blank">华为商城</a>
+					|
+					<a href="http://www.juanpi.com/" target="_blank">卷皮网</a>
+					|
+					<a href="http://www.99114.com/" target="_blank">电子商务平台</a>
+					|
+					<a href="http://www.cebnet.com.cn/" target="_blank">中国电子银行网</a>
+					|
+					<a href="http://www.301688.com" target="_blank">三帝贸易网</a>
+					|
+					<a href="http://www.pztuan.com/index.aspx" target="_blank">团购</a>
+					|
+					<a href="http://www.vmall.com" target="_blank">华为商城</a>
+					|
+					<a href="http://www.juanpi.com/" target="_blank">卷皮网</a>
+					|
+					<a href="http://www.99114.com/" target="_blank">电子商务平台</a>
+					|
+					<a href="http://www.cebnet.com.cn/" target="_blank">中国电子银行网</a>
+					|
+					<a href="http://www.301688.com" target="_blank">三帝贸易网</a>
+					|
+					<a href="http://www.pztuan.com/index.aspx" target="_blank">团购</a>
+					|
+					<a href="http://www.301688.com" target="_blank">三帝贸易网</a>
+					|
+					<a href="http://www.pztuan.com/index.aspx" target="_blank">团购</a>
+					|				
+				</p>
+				</div>
+			<div class="footer-nav ">
+				    <a href="http://www.zol.com.cn/" target="_blank">中关村在线</a>
+					|
+					<a href="http://www.zol.com/" target="_blank">ZOL商城</a>
+					|					
+					<a href="http://www.pztuan.com/index.aspx" target="_blank">团购</a>
+					|	
+					<a href="http://qiang.zol.com/" target="_blank">限时抢购</a>
+					|
+					<a href="http://www.zol.com.cn/" target="_blank">经销商</a>
+					|
+					<a href="http://www.zol.com/" target="_blank">产品报价</a>
+					|					
+					<a href="http://www.pztuan.com/index.aspx" target="_blank">论坛</a>
+					|	
+					<a href="http://qiang.zol.com/" target="_blank">问答</a>
+			</div>
+			
+			<div class="copyright">
+				<a href="http://help.zol.com/index.php?c=Detail&amp;id=1254" target="_blank">关于ZOL商城</a>
+				|
+				<a href="http://help.zol.com/index.php?c=Default" target="_blank">帮助中心</a>
+				|
+				<a href="http://help.zol.com/index.php?c=Detail&amp;id=1256" target="_blank">联系我们</a>
+				|
+				<a href="http://help.zol.com/index.php?c=Detail&amp;id=1257" target="_blank">发展历程</a>
+				|
+				<a href="http://help.zol.com/index.php?c=Detail&amp;id=1255" target="_blank">媒体报道</a>
+			</div>
+
+			<div class="copyright">
+				<span style="margin-left:-5px;">
+                                        ©2016 中关村在线 版权所有.
+					<a href="http://icon.zol.com.cn/icp.jpg" target="_blank">京ICP证150096号</a>
+					&nbsp;&nbsp; 京ICP备14061128号 &nbsp;&nbsp;
+					<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020026" target="_blank">京公网安备11010802020026号</a>
+					<a href="http://icon.zol.com.cn/wangwen.jpg" target="_blank">网络文化经营许可证京网文[2016]1631-199</a>
+				</span>
+			</div>
+			
+			<div>
+				<a style="color:#fff;background:#666;border-radius:3px;
+					-webkit-border-radius:3px;float:right;margin-right:50px;padding:0 8px;">广告</a>
+			</div>
+			
+			</div>
+			
+		</div><!--包括全部内容的div-->
+
+
+</body>
+<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/default.js"></script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/gdlb.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/login.js"></script>
+
+</html>

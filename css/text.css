@@ -1,0 +1,576 @@
+/*@Description: 商城最新公共吊顶*/
+ body,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,th,td,p,blockquote,pre,form,fieldset,legend,textarea,hr {
+ 	margin:0 0;
+ 	padding:0;}
+
+ body {
+ 	font:12px/1.5 Arial;
+ 	 color:#333;
+ 	 }
+html body {
+    font: 12px/1.14 'Microsoft YaHei',\5b8b\4f53;
+}	
+body a:hover {
+    text-decoration: none;
+    color: #c00;
+}	
+
+ em {font-style:normal;}
+ /*这是因为内部的DIV因为float:left之后，就丢失了clear:both和display:block的样式，
+  * 所以外部的DIV不会被撑开.我们想让外部容器的DIV随着内部DIV增多而增加高度
+  * clearfix:after  清除css浮动   */
+ .clearfix:after {
+ 	 content:"."; 
+ 	 display: block;
+ 	 /*可见度设为隐藏。注意它和display:none;是有区别的。visibility:hidden;仍然占据空间，只是看不到而已 */
+ 	 visibility: hidden;
+ 	 clear: both; /*清除左右浮动*/
+ 	 height:0;
+ 	 font-size:0}
+ 	   
+/*头部第一小部分*/
+.zc-back-home a {
+    color: #666;
+    text-decoration: none;} 
+.zc-back-home a:hover,.zc-login a:hover,.zc-register a:hover,.zc-quick-menu li a:hover{ 
+	color:#c00; 
+	text-decoration:underline;}
+.zc-quick-menu .zc-hd .ico,.zc-mobile .zc-hd{ 
+	background:url(../images/topbar_ico.png)no-repeat;}
+.zc-topbar{ 
+	z-index:9; /*拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面*/
+	height:29px;
+	font:12px/29px arial; 
+	background:#f5f5f5; 
+	border-bottom:1px solid #e6e6e6; 
+	margin: 0 auto;
+	width: 100%;
+	/*display: none;*/
+	}
+.header-pic{
+	width: 100%;
+}	
+/*浮动搜索条*/
+.fixe-header {
+    margin: 0 auto;
+    width: 1200px;
+    height: 59px;
+   
+}
+/*浮动条  登录注册样式*/
+.big-header{
+	margin: 0 auto;
+	margin-top: -121px;
+    width: 100%;
+    z-index: 100;
+     position: fixed;
+    height: 59px;
+    background-color: #fff;
+  display: none;
+}
+
+
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;}
+.clearfix {zoom:1} 
+ /*这是针对于IE6的，因为IE6不支持:after伪类，这个神奇的zoom:1让IE6的元素可以清除浮动来包裹内部元素*/
+
+.zc-login-info{ float:left;}
+
+.zc-back-home{ padding:0 20px 0 0;} //商城首页
+.zc-back-home a{ color:#666; 
+    text-decoration:none;}
+.zc-login{ 
+	padding:0 20px 0 0; 
+	color:#666;}
+.zc-login a,.zc-register a{ 
+	color:#36c; 
+	text-decoration:none;}
+
+/*头部第二部分.zc-quick-menu{}  我的订单...*/
+.zc-quick-menu{ 
+	float:right; 
+    margin:0 -61px 0 0;}
+.zc-quick-menu li{ 
+	float:left; 
+	margin:0 10px; 
+	height:29px; 
+	font:12px/29px arial;}
+
+li{ 
+	list-style: none;
+    }
+    
+.zc-quick-menu li a{ 
+	display:inline-block; 
+	color:#666; 
+	text-decoration:none;}
+	
+.zc-quick-menu .zc-hover{ 
+	position:relative; 
+	zoom:1;}
+.zc-quick-menu .zc-my-center{ 
+	margin:0;}
+	
+.zc-quick-menu .zc-hd{ 
+	position:relative; 
+	padding:0 23px 0 10px;}
+	
+/*图标topbar_ico.png 设置样式*/	
+.zc-quick-menu .zc-hd .ico{ 
+	position:absolute; 
+	top:-32px; 
+	right:10px; 
+	width:7px; 
+	height:4px; 
+	background-position:0 -45px;
+	background:url(img/topbar_ico.png);}
+	
+/*设置鼠标移上手机商城没有链接样式*/	
+.zc-quick-menu .zc-hd:hover{ 
+	color:#666; 
+	text-decoration:none;}
+
+/*买家中心样式*/	
+.zc-my-center-bd{ 
+	display:none; 
+	position: absolute;
+    top: 29px;
+    left: 735px;
+    padding: 3px 9px;
+    width: 88px;
+    border: 1px solid #ededed;
+    background: #fff;}
+.zc-quick-menu .zc-hover .zc-hd{ 
+	z-index:2; 
+	margin:0 0 -1px; 
+	padding:0 22px 0 9px; 
+	height:30px; 
+	background-color:#fff; 
+	border-left:1px solid #ededed; 
+	border-right:1px solid #ededed;}
+.zc-hover .zc-my-center-bd{
+	display:none;
+	}
+
+.zc-hover .zc-my-center-bd a{ 
+	display:block; 
+	font:12px/28px arial;}
+.zc-quick-menu .zc-my-center-bd a:hover{ 
+	color:#c00; 
+	text-decoration:none;}
+/*买家中心链接样式*/
+.zc-my-center-bd a{
+	text-decoration:none;
+	color: #666;
+}
+.zc-my-center:hover .zc-my-center-bd {
+	display: block;
+	}
+.zc-quick-menu .zc-mobile{ 
+	margin:0;}
+
+/*手机商城（手机标签topba_ico.png）位置设置，去掉标签会移动*/	
+.zc-quick-menu .zc-hover .zc-mobile-hd{ 
+	padding:0 22px 0 24px;}
+
+/*手机商城*/
+.zc-mobile .zc-hd{ 
+	padding:0 23px 0 25px; 
+	background-position:0 0;}
+.zc-hover .zc-mobile-hd{ 
+	background-position:-1px 0;}
+.zc-mobile .zc-mobile-bd img{ 
+	display:block;}
+	
+/*手机商城二维码*/
+.zc-mobile-bd{ 
+	display:none; 
+	z-index: 10;
+	position:absolute; 
+	top:29px; 
+	left:0; 
+	padding:20px; 
+	width:130px; 
+	height:130px; 
+	border:1px solid #ededed; 
+	background:#fff;}
+.zc-hover .zc-mobile-bd{ 
+	display:block;}
+
+/*客服电话*/
+.zc-service-tel{ 
+	display:none; 
+	position:absolute; 
+	top:29px; 
+	right:0; 
+	padding:3px 9px; 
+	width:80px; 
+	border:1px solid #ededed; 
+	font: 12px/28px arial; 
+	text-align:right; 
+	background:#fff;}
+.zc-hover .zc-service-tel{ 
+	display:block;}    
+/*标题图片*/	
+element.style {
+    display: block;
+    height: 90px;
+    margin-top: 0px;
+    background: url(../images/tansuowujin.jpg) no-repeat 50% 0;
+}
+/*头部搜索部分*/
+.header {
+    margin: 0 auto;
+    padding: 25px 0 0;
+    width: 1200px;
+    height: 92px;
+}
+
+
+.logo,.logo1 {
+    float: left;
+    width: 353px;
+    height: 55px;
+    padding: 5px 0 0;
+}
+.logo .mall-logo ,.logo1 .mall-logo1{
+    display: block;
+    width: 180px;
+    height: 50px;
+   }
+div{display: block;}
+/*全国*/
+.logo-right-box ,.logo-right-box1 {
+    float: left;
+    height: 50px;
+    float: left;
+    border-left: 1px solid #eee;
+    margin-left: 189px;
+    margin-top: -49px;
+}
+/*全国下拉标签icon*/
+.city-location .city-name .icon ,.city-location1 .city-name1 .icon { 
+    position: absolute;
+    right: 8px;
+    top: 0;
+    width: 10px;
+    height: 34px;
+    background: url(../images/city-icon.png) no-repeat left center;
+}
+.city-location1 .city-name1 .icon { 
+    position: absolute;
+    right: 8px;
+    top: 0;
+    width: 10px;
+    height: 58px;
+    background: url(../images/city-icon.png) no-repeat left center;
+}
+/*定位*/
+.city-location { 
+	/*方式样式化列表时，既可使得列表元素能按行挨个排列，同时元素还能保持其块属性，比如高和宽、上下边距等。*/
+    display: inline-block;
+    height: 35px;
+    margin: -5px 0 6px -1px;
+    position: relative;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px 1px 0 1px;
+}
+.city-location1{
+	 display: inline-block;
+    height: 35px;
+    margin: -4px 0 6px -1px;
+    position: relative;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px 1px 0 1px;
+}
+.city-location .city-name {
+    display: block;
+    padding: 0 32px 0 10px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+.city-location1 .city-name1{
+    display: block;
+    padding: 11px 32px 0 10px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+/*设置鼠标移上显示下拉内容*/
+.city-location:hover .city-list ,.city-location1:hover .city-list1{
+	display: block;
+	}
+.city-list ,.city-list1 {
+    display: none;
+    width: 168px;
+    padding: 8px 0;
+    position: absolute;
+    left: -1px;
+    top: 33px;
+    background-color: #fff;
+    z-index: 4;
+    border: 1px solid #eee;
+}
+.city-list ul, ol ,.city-list1 ul, ol{
+    list-style: none;
+}
+.city-list li ,.city-list1 li {
+	float: left;
+	color:#666;
+	font-size: 15;
+	padding:  8px 10px 7px 18px;
+    list-style: none;
+}
+.city-list a,.city-list1 a{
+	color:#666;
+    text-decoration:none;}
+.city-list a:hover,.city-list1 a:hover{
+	color:#c00;
+	background-color: #F0F0F0;
+}
+.quanguo,.quanguo1{
+	background-color:#c00;
+	font: 12px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+	color:#FFFFFF;
+}
+
+.bigbox {
+    float: right;
+    width: 160px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: -49px;
+    margin-right: -183px;
+    padding: 7px 24px 0 0;
+}
+.login-box{
+	float: right;
+}
+.login-register{
+	float: right;
+	height: 36px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+.login-register a{
+    display: inline-block;
+    padding-left: 18px;
+    margin-right: 10px;
+    height: 40px;
+    text-decoration: none;
+    background:url(../images/login.png) no-repeat left 12px;
+    color: #333;
+    }
+/*注册标签位置设置(图片整合技术，相对位置)*/
+.login-register a.register-1 {
+    background-position: left -20px;
+}
+.login-register a:hover{
+	text-decoration: none;
+}
+/*同城GO*/
+.logo-right-box .tongcheng {
+    margin-top: -15px;
+    height: 30px;
+    line-height: 14px;
+    font-size: 12px;
+    color: #666;
+    width: 150px;
+    padding-left: 12px;
+    background: url(../images/tc-logo.jpg) no-repeat 12px center;
+}
+/*搜索框*/
+.search-list,.search-list1{
+	float: left;
+	width: 596px;
+	height: 73px;
+}
+.search,.search1{
+	float: left;
+	width: 531px;
+	height: 36px;
+	margin: 9px 9px 5px 53px;
+    border: 2px solid #c00;
+}
+/*搜索文本框*/
+.text,.text1 {
+    padding: 6px 10px;
+    width: 427px;
+    height: 24px;
+    font: 14px/20px ;
+    color: #666;
+    border: 0 none;
+    outline: 0 none;
+}
+/*搜索按钮*/
+.s-btn,.s-btn1 {
+    position: absolute;
+    float: left;
+    top: 159;
+    right: 335px;
+    width: 89px;
+    height: 36px;
+    font-size: 17px;
+    color: #fff;
+    border: 0 none;
+    background: #c40000;
+    cursor: pointer;
+}
+/*热搜榜*/
+.resou {
+    padding: 13px 55px 0;
+    font: 12px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+}
+.resou a{
+    text-decoration:none;
+	padding-right: 10px;
+	color:#999;
+}
+/*专注数码*/
+.focus{
+	margin: -72px 666px;
+	float: left;
+	width: 180px;
+	height: 60px;
+}
+/*热卖商品大框架*/
+.hotsale{
+	padding-top: 28px;
+	margin: auto;
+	width: 1200px;
+	height: 44px;
+}
+div{
+	display: block;
+}
+.remai{
+	height: 44px;
+}
+/*热卖商品标题*/
+.remai .title{
+	float: left;
+    padding-left: 15px;
+    line-height: 44px;
+    font-size: 24px;
+    font-weight: normal;
+    background:url(../images/module-title.png) no-repeat left center;
+}
+/*换一批*/
+.change{
+	float: right;
+	margin-top: 6px;
+    height: 38px;
+    line-height: 44px;
+    padding-top: -1px;
+    padding-left: 19px;
+    margin-right: 16px;
+    font-size: 14px;
+    color: #666;
+    font: 14px/38px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+    background: url(../images/other.png) no-repeat left center;
+}
+.change:hover{
+	cursor: pointer;
+}
+/*热卖商品列表*/
+.hotsale-list{
+	margin-left: 1px;
+	width: 1199px;
+	height: 312px;
+}
+.hotsale-list li {
+    float: left;
+    width: 221px;
+    height: 292px;
+    border: 1px solid #ededed;
+    margin-left: -2px;
+    padding: 9px;
+    position: relative;
+}
+/*鼠标移上每张图片出现红色框框效果*/
+.hotsale-list li:hover{      
+	border: 1px solid #d54546;
+	}
+/*送达时间*/
+.arrival-time{
+    height: 24px;
+    line-height: 24px;
+    /*padding: 0 7px;*/
+    background-color: #d54546;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+/*热卖商品图片设置*/
+.hotsale-list .picture {
+    display: block;
+    height: 220px;
+    position: relative;
+}
+.hotsale-list .picture img {
+    vertical-align: middle;
+}
+a {
+    cursor: pointer;
+}
+.phone-name {
+    height: 40px;
+    line-height: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.phone-name a{
+	color: #333;
+}
+/*价格标签*/
+.price-tag {
+	display: block;
+    height: 18px;
+    margin-top: 6px;
+}
+.phone-price {
+    font-size: 14px;
+    color: #ce1a1b;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+.remai .title{
+	font: 24px/30px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+}
+/*设置图片文字内容样式*/
+.arrival-time,.phone-name{
+    font: 12px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+}
+.phone-price{
+    font: 15px/18px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+}
+.picture a,.phone-name a,.change{
+	text-decoration: none;	
+}
+.phone-name a:hover{
+	text-decoration: underline;
+}
+

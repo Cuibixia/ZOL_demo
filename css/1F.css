@@ -1,0 +1,286 @@
+/*html, body, ul, li, ol, dl, dd, dt, p,a, h1, h2, h3, h4, h5, h6,
+ form, fieldset, legend,span, img,input 
+ {border:0; margin:0; padding:0;}
+ */
+.all{
+	min-width: 800px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* 活动广告 */
+.ad-div{width: 1200px;height: 90px;padding-top: 20px;}
+.ad-div img{vertical-align: middle;}
+.computer-section{
+	padding-top: 20px;
+}
+.computer-section.firstfloor{
+		padding-top: 0px;
+}
+.module-title{
+	width: 147px;
+	height: 44px;
+}
+.module-title .title {
+    float: left;
+    padding-left: 15px;
+    line-height: 44px;
+    font-size: 24px;
+    font-weight: normal;
+    background: url(http://icon.zol-img.com.cn/newshop/shop/index/module-title.png) no-repeat left center;
+}
+
+.clearfix::after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    font-size: 0;
+}
+
+.computer-left {
+    float: left;
+    width: 360px;
+    height: 420px;
+    position: relative;
+}
+del, ins, u, s, a, a:hover {
+    text-decoration: none;
+}
+a, button {
+    cursor: pointer;
+}
+.computer-left .pic img {
+    vertical-align: middle;
+}
+a img {
+    border: 0;
+}
+
+.computer-right {
+    float: right;
+    width: 840px;
+    height: 420px;
+    position: relative;
+}
+
+.waretype-tab {
+    position: absolute;
+    top: -34px;
+    left: 1px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.waretype-tab li.fli{
+    padding-top: 0;
+    border-top: 2px solid #ce1a1b;
+    height: 33px;
+    border-bottom: 0 none;
+}
+
+.waretype-tab li {
+    float: left;
+    width: 108px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    padding-top: 1px;
+    margin-left: -1px;
+    border: 1px solid #ededed;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+li {
+    list-style: none;
+    vertical-align: top;
+}
+
+.hot-region-ware li {
+    float: left;
+    width: 208px;
+    height:199px;
+    border: 1px solid #ededed;
+    margin: 10px -1px -1px 1px;
+}
+.clear{
+	clear: both;
+}
+
+.hot-region-ware li:hover{
+	border: 1px solid red;
+}
+
+.product-series li{
+	float: left;
+    width: 188px;
+    height: 189px;
+    border: 1px solid #ededed;
+    margin: -1px 0 0 -1px;
+    padding: 10px;
+}
+.product-series .name {
+    height: 40px;
+    line-height: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.product-series .name a {
+    color: #333;
+}
+.product-series .name a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.price {
+    font-size: 14px;
+    color: #ce1a1b;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+}
+.prime-price{
+	font-size: 12px;
+    color: #a6a6a6;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+.brands-con {
+    padding: 3px 3px 3px 4px;
+    border: 1px solid #ededed;
+    margin-top: -1px;
+}
+.brands-con li{
+    float: left;
+    width: 118px;
+    height: 60px;
+    border: 1px solid transparent;
+    margin-left: -1px;
+}
+.brands-con img {
+    vertical-align: middle;
+}
+.brands-con li:hover{
+	border: 1px solid #ededed;
+	}
+.product-series .icon {
+	float: right;
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #f00;
+    border: 1px solid #f33;
+}
+
+.ban2{
+	width: 840px;
+	height: 210px;
+	margin: 0;
+	padding: 0;
+}
+/*  修改输出屏大小  */
+.banner{/*  修改输出屏大小  */ 
+width: 840px; height: 210px; 
+overflow: hidden; position: relative; 
+	margin: 0;
+	padding: 0;
+margin-left: auto; margin-right: auto; 
+}
+.banner .img{width:9999px; position:absolute; /*left:0px; top:0;*/}
+.banner .img li{ float:left;}
+/*/ 修改图片大小 /*/
+.banner .img img{ width:840px;}
+/*/ 小圆圈 /*/
+.banner .num{ position:absolute; width:100%; bottom:10px; left:0; text-align:center; font-size:0px;}
+.banner .num li{ width:10px;height:10px; background:#888; border-radius:50%; display:inline-block; margin:0 3px; cursor:pointer;}
+.banner .num li.on{ background:#F60;}
+/*/ 按钮 /*/
+.banner .btn{ width:40px; height:40px; background:rgba(0,0,0,0.5); position:absolute; top:50%; margin-top:-25px; cursor:pointer; text-align:center; line-height:50px; color:#fff; font-size:40px; font-family:"宋体"; display:none;}
+.banner:hover .btn{ display:block;}
+.banner .btn_l{ left:0;}
+.banner .btn_r{ right:0;}
+
+
+/*tab切换*/
+        .waretype-tab ul,li,div {padding:0;margin:0;}
+        .waretype-tab ul li {float:left;width:100px;height:30px;line-height:30px;text-align:center;background-color:#fff;}
+        .waretype-tab ul li.fli {background-color:#fff;color:red;}
+        .waretype-tab ul {overflow:hidden;zoom:1;list-style-type:none;}
+        .tab_con {width:840px;height:420px;}
+       /* #tab_con div {width:840px;height:420px;display:none;}*/
+        .tab_con div.fdiv {width:840px;height:420px;display:block;background-color:#fff;}
+        .hide{display:none;}
+        .ee{width:100px; height:100px; background-color:#F00;}
+		
+.all1{	
+	clear: both;
+	width:1349px;
+	height: 222px;
+	float:left;
+	margin-top: -50px;
+    margin-left: -75px;
+	background: #2d2d2d;
+}
+.footer-nav-bar {
+    margin: 0;
+    padding: 25px 0 30px 30px;
+    font: 12px/1.14 'Microsoft YaHei',宋体;
+    color: #333;
+}
+.partners {	
+    position: relative;
+    padding: 0 135px 0 55px;
+    /*height: 24px;*/
+    overflow: hidden;
+    font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+    color: #666;
+   }
+.partners .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ccc;
+}
+
+.partners a, .partners a:hover,.footer-nav a, .footer-nav a:hover {
+	text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.footer-nav {
+    margin: 0 0 0 -10px;
+    padding: 7px 0 0;
+    font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+    color: #666;
+}
+.copyright {
+    margin: 0 0 0 -10px;
+    padding: 20px 0 0;
+    font: 12px/24px "Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+    color: #666;
+}
+.copyright a, .copyright a:hover {
+	text-decoration: none;
+    margin: 0 10px;
+    color: #999;
+    white-space: normal;
+    word-break: keep-all;
+}
+.copyright span {
+    padding: 0 0 0 15px;
+}
